@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Ante Wizard</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Ante Wizard</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home
+              </a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 ">
+          <h1 class="mt-5">Start a new trade</h1>
+          <form id="wizard" class="wizard" action="calcit.html" method="get">
+
+             <div class="form-group" >
+              <label for="usr">Broker:</label>
+              <select type="select"  class="form-control" id="broker" name="broker">
+                <option value="">Please Select</option>
+                <option value="1">Fatmacedonian</option>
+                <option value="2">Tronics_Dude</option>
+                <option value="3">Cryptozwerg</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="anteprice">Ante Price (1 trx):</label>
+              <input type="text" class="form-control anteprice" id="anteprice" name="anteprice">
+            </div>
+
+            <div class="form-group">
+              <label for="anteprice">Ante Quantity:</label>
+              <input type="text" class="form-control anteprice" id="antequantity" name="antequantity">
+            </div>
+
+            <div class="form-group">
+              <label for="anteprice">Seller Name:</label>
+              <input type="text" class="form-control anteprice" id="sellername" name="sellername">
+            </div>
+
+            <div class="form-group">
+              <label for="anteprice">Seller Wallet:</label>
+              <input type="text" class="form-control anteprice" id="sellerwallet" name="sellerwallet">
+            </div>
+
+            <div class="form-group">
+              <label for="anteprice">Buyer Name:</label>
+              <input type="text" class="form-control anteprice" id="buyername" name="buyername">
+            </div>
+
+            <div class="form-group">
+              <label for="anteprice">Buyer Wallet:</label>
+              <input type="text" class="form-control anteprice" id="buyerwallet" name="buyerwallet">
+            </div>
+
+
+             <div class="form-group">
+              <label for="usr">Broker fee(%):</label>
+              <input type="text" class="form-control brokerfee" id="brokerfee" value="5" name="brokerfee">
+            </div>           
+  <button type="submit" class="btn btn-primary">Do da trade</button>
+
+         </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
